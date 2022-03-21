@@ -5,5 +5,6 @@ class App {
 }
 
 fun main() {
+    println(Config.SPLASH)
     println(App().bootMessage)
 }
