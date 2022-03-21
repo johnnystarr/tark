@@ -5,7 +5,6 @@ import kotlin.test.assertEquals
 
 class ConfigTest {
     @Test fun appVersion() {
-        val app = App()
         assertEquals("0.0.1", Config.VERSION)
     }
 }

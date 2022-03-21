@@ -53,3 +53,6 @@ java {
     sourceCompatibility = JavaVersion.VERSION_11
     targetCompatibility = JavaVersion.VERSION_11
 }
+
+group = 'io.johnnystarr'
+version = '0.0.1'
