@@ -5,6 +5,6 @@ class App {
 }
 
 fun main() {
-    println(Config.SPLASH)
-    println(App().bootMessage)
+    Terminal.write(Config.SPLASH)
+    Terminal.write("{w${App().bootMessage}")
 }

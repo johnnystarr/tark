@@ -54,5 +54,13 @@ java {
     targetCompatibility = JavaVersion.VERSION_11
 }
 
+compileKotlin {
+    kotlinOptions.jvmTarget = '11'
+}
+
+compileTestKotlin {
+    kotlinOptions.jvmTarget = '11'
+}
+
 group = 'io.johnnystarr'
-version = '0.0.1'
+version = '0.0.2'
