@@ -9,7 +9,10 @@ migrate:
 	./gradlew build
 
 run:
-	java -jar tark/build/libs/tark-?.?.?-all.jar
+	@docker-compose up -d
+	@sleep 5
+	@java -jar tark/build/libs/tark-?.?.?-all.jar
 
 clean:
 	./gradlew clean
+	docker-compose down
