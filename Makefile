@@ -2,6 +2,9 @@ DEFAULT_GOAL: build
 .PHONY: build
 
 build:
+	./gradlew build
+
+migrate:
 	./gradlew generateExposedCode
 	./gradlew build
 
