@@ -1,15 +1,11 @@
 package io.johnnystarr.tark
 
+import io.johnnystarr.tark.datastore.Users
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
 import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.transactions.transaction
 
-object Users : Table() {
-    val id = integer("id").autoIncrement()
-    val name = varchar("name", length = 50) // Column<String>
-    override val primaryKey = PrimaryKey(id)
-}
 
 class App {
     val bootMessage: String = "TARK version ${Config.VERSION}"
