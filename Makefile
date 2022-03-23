@@ -9,7 +9,7 @@ migrate:
 	./gradlew build
 
 run:
-	./gradlew run
+	java -jar tark/build/libs/tark-?.?.?-all.jar
 
 clean:
 	./gradlew clean

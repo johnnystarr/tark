@@ -35,7 +35,7 @@ fun main() {
 
 fun initDatabase(){
     val workingDir = System.getProperty("user.dir")
-    val hikariConfig = HikariConfig("${workingDir}/../db.properties")
+    val hikariConfig = HikariConfig("${workingDir}/db.properties")
     val dataSource = HikariDataSource(hikariConfig)
 
     val flyway = Flyway.configure().dataSource(dataSource).load()
