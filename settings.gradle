@@ -9,4 +9,4 @@
  */
 
 rootProject.name = 'tark'
-include('app')
+include('tark')
