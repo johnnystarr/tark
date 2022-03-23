@@ -71,5 +71,15 @@ tasks.generateExposedCode {
     dependsOn("clean")
 }
 
+task deleteFlywaySchema {
+    delete "${project.buildDir}/tables/io/johnnystarr/tark/Public.flywaySchemaHistory.kt"
+}
+
+tasks.named("deleteFlywaySchema") {
+    it.dependsOn("generateExposedCode")
+}
+
+build.dependsOn("deleteFlywaySchema")
+
 group = 'io.johnnystarr'
 version = '0.0.2'

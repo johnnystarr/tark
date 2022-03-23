@@ -18,19 +18,19 @@ fun main() {
     Terminal.write("{w${App().bootMessage}")
     initDatabase()
 
-    transaction {
-        Users.deleteAll()
-
-        Users.insert {
-            it[name] = "Johnny"
-            it[age] = 1
-        }
-
-        Users.selectAll().forEach {
-            println(it[Users.name])
-            println("Age is " + it[Users.age])
-        }
-    }
+//    transaction {
+//        Users.deleteAll()
+//
+//        Users.insert {
+//            it[name] = "Johnny"
+//            it[age] = 1
+//        }
+//
+//        Users.selectAll().forEach {
+//            println(it[Users.name])
+//            println("Age is " + it[Users.age])
+//        }
+//    }
 }
 
 fun initDatabase(){
